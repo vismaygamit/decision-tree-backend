@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Typescript compiled output
+dist/
+build/
+
+# dotenv environment variable file
+.env
+
+# Debug files
+*.log
