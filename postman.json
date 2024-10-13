@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "98921392-f53d-4f66-8412-78fbd10ec071",
+		"name": "decisionTreeTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6588071",
+		"_collection_link": "https://dark-resonance-677894.postman.co/workspace/VismayPersonal~aa311e3d-192d-4840-8569-153c4ac17f13/collection/6588071-98921392-f53d-4f66-8412-78fbd10ec071?action=share&source=collection_link&creator=6588071"
+	},
+	"item": [
+		{
+			"name": "sms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"sms\",\r\n    \"phoneNumber\":\"+919601550116\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/decisiontree/action"
+			},
+			"response": []
+		},
+		{
+			"name": "email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    // \"type\":\"email\",\r\n    \"sender\":\"vismay@gmail.com\",\r\n    // \"receiver\":\"vismay1@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/decisiontree/action"
+			},
+			"response": []
+		},
+		{
+			"name": "condition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"condition\",\r\n    \"condition\": \"5 + 10 * 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/decisiontree/action"
+			},
+			"response": []
+		},
+		{
+			"name": "loop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"loop\",\r\n    \"iterations\": 10,\r\n    \"condition\": \"5 + 10 * 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/decisiontree/action"
+			},
+			"response": []
+		}
+	]
+}
