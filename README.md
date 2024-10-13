@@ -1,5 +1,5 @@
 # Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
+- Install [Node.js](https://nodejs.org/en/) version > 18.0.0
 
 
 # Getting started
